@@ -1,0 +1,1 @@
+PREFERRED_VERSION_python3-urwid-readline = "0.13"

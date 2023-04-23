@@ -8,6 +8,8 @@ IMAGE_INSTALL_append = "\
     helloworld \
     python3 \
     python3-pudb \
+    python3-urwid \
+    python3-urwid-readline \
 "
 
 IMAGE_FSTYPES = "tar.bz2"
