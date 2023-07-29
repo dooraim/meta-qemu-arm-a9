@@ -10,6 +10,8 @@ IMAGE_INSTALL_append = "\
     python3-pudb \
     python3-urwid \
     python3-urwid-readline \
+    htop \
+    devmem2 \
 "
 
 IMAGE_FSTYPES = "tar.bz2"
