@@ -5,6 +5,17 @@ require qemu-image-base.inc
 
 COMPATIBLE_MACHINE = "qemuarma9"
 
-IMAGE_INSTALL_append = " gdbserver"
+IMAGE_INSTALL_append = "\
+    gdbserver \
+    gdb \
+    strace \
+    kernel-vmlinux \
+    uftrace \
+    lttng-tools \
+    lttng-modules \
+    ltrace \
+    perf \
+    systemtap \
+"
 
-EXTRA_IMAGE_FEATURES = "debug-tweaks tools-debug"
+EXTRA_IMAGE_FEATURES = "dbg-pkgs debug-tweaks tools-debug tools-sdk"
