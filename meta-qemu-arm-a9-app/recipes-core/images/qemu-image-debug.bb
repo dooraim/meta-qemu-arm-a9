@@ -14,8 +14,8 @@ IMAGE_INSTALL_append = "\
     lttng-tools \
     lttng-modules \
     ltrace \
-    perf \
     systemtap \
 "
 
-EXTRA_IMAGE_FEATURES = "dbg-pkgs debug-tweaks tools-debug tools-sdk"
+EXTRA_IMAGE_FEATURES = "dbg-pkgs debug-tweaks tools-debug tools-sdk  tools-profile"
+IMAGE_INSTALL:append = "kernel-vmlinux"
