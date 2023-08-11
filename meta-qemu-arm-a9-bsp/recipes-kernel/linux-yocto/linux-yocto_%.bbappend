@@ -5,4 +5,4 @@ COMPATIBLE_MACHINE_qemuarma9 = "qemuarma9"
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-SRC_URI += "file://0001-vexpress-add-kgdb-and-trace.patch"
+#SRC_URI += "file://0001-update-for-vexpress-test.patch"
