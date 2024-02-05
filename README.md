@@ -55,7 +55,34 @@ $ source poky/oe-init-build-env build
 ```
 
 In the `conf/bblayers.conf` file, add the layers from the repositories you downloaded previously.
+```
+╰─❯ cat ../build/conf/bblayers.conf
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
 
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  /home/norlando/yocto/qemu/poky/meta \
+  /home/norlando/yocto/qemu/poky/meta-poky \
+  /home/norlando/yocto/qemu/poky/meta-yocto-bsp \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-initramfs \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-filesystems \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-gnome \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-multimedia \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-networking \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-oe \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-perl \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-python \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-webserver \
+  /home/norlando/yocto/qemu/meta-openembedded/meta-xfce \
+  /home/norlando/yocto/qemu/meta-qemu-arm-a9/meta-qemu-arm-a9-app \
+  /home/norlando/yocto/qemu/meta-qemu-arm-a9/meta-qemu-arm-a9-bsp \
+  /home/norlando/yocto/qemu/meta-qemu-arm-a9/meta-qemu-arm-a9-distro \
+  "
+```
 In the `conf/layer.conf` file, add the machine `qemuarma9`.
 
 ## Test
