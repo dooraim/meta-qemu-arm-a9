@@ -6,3 +6,6 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 #SRC_URI += "file://0001-update-for-vexpress-test.patch"
+
+SRC_URI_append = " file://bsp.cfg"
+KERNEL_FEATURES_append = " bsp.cfg"
