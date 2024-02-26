@@ -43,9 +43,9 @@ $ mkdir qemu-arm-a9 && cd qemu-arm-a9
 Download the following repository into `qemu-arm-a9`
 
 ```bash
-$ git clone https://github.com/yoctoproject/poky.git -b dunfell
-$ git clone https://github.com/openembedded/meta-openembedded.git -b dunfell
-$ git clone https://gitlab.com/norlando/meta-qemu-arm-a9.git -b dunfell
+$ git clone https://github.com/yoctoproject/poky.git -b mickledore
+$ git clone https://github.com/openembedded/meta-openembedded.git -b mickledore
+$ git clone git@gitlab.com:norlando/meta-qemu-arm-a9.git -b mickledore
 ```
 
 Source envirounment
