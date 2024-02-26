@@ -1,0 +1,1 @@
+PREFERRED_VERSION_python3-urwid = "2.1.2"
