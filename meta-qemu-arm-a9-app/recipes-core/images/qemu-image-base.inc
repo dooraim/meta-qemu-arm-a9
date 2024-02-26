@@ -11,7 +11,7 @@ REQUIRED_DISTRO_FEATURES = "wayland"
 CORE_IMAGE_BASE_INSTALL += "weston weston-init weston-examples gtk+3-demo clutter-1.0-examples"
 CORE_IMAGE_BASE_INSTALL += "${@bb.utils.contains('DISTRO_FEATURES', 'x11', 'weston-xwayland matchbox-terminal', '', d)}"
 
-IMAGE_INSTALL_append = "\
+IMAGE_INSTALL:append = "\
 	bash \
     helloworld \
     python3 \
@@ -20,6 +20,7 @@ IMAGE_INSTALL_append = "\
     python3-urwid-readline \
     htop \
     devmem2 \
+    i2ctools \
 "
 
-IMAGE_FSTYPES = "tar.bz2"
+IMAGE_FSTYPES = "tar.bz2 ext4"

@@ -5,7 +5,7 @@ require qemu-image-base.inc
 
 COMPATIBLE_MACHINE = "qemuarma9"
 
-IMAGE_INSTALL_append = "\
+IMAGE_INSTALL:append = "\
     gdbserver \
     gdb \
     strace \
