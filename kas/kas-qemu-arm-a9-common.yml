@@ -1,0 +1,27 @@
+---
+header:
+  version: 16
+
+repos:
+  poky:
+    url: https://github.com/yoctoproject/poky.git
+    branch: mickledore
+    commit: 7235399a86b134e57d5eb783d7f1f57ca0439ae5
+    path: sources/poky
+    layers:
+      meta:
+      meta-poky:
+
+  meta-openembedded:
+    url: https://github.com/openembedded/meta-openembedded
+    branch: mickledore
+    commit: 8e1f0fa6bfac0e96fedc666fe9066f92c85afb27
+    path: sources/meta-openembedded
+    layers:
+      meta-filesystems:
+      meta-gnome:
+      meta-multimedia:
+      meta-networking:
+      meta-oe:
+      meta-python:
+      meta-webserver:
