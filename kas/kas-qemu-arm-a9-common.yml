@@ -3,6 +3,13 @@ header:
   version: 16
 
 repos:
+
+  meta-qemu-arm-a9:
+    layers:
+      meta-qemu-arm-a9-app:
+      meta-qemu-arm-a9-bsp:
+      meta-qemu-arm-a9-distro:
+
   poky:
     url: https://github.com/yoctoproject/poky.git
     branch: mickledore
